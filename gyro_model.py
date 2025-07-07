@@ -1,9 +1,9 @@
 # Draw models without a pipeline
 
 import harfang as hg
-from pyjoycon import GyroTrackingJoyCon, get_R_id
+from pyjoycon import GyroTrackingJoyCon, get_L_id, get_R_id
 
-joycon_id = get_R_id()
+joycon_id = get_L_id()
 joycon = GyroTrackingJoyCon(*joycon_id)
 
 hg.InputInit()
